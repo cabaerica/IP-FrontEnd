@@ -2,6 +2,11 @@ img{
     height: 25vw;
     width: auto;
 }
-.carousel{
-    align-items: center;
+p {
+    color: black;
+}
+#titlu {
+    font-family: Oswald;
+    color: black;
+    font-weight: bolder;
 }

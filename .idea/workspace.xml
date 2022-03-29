@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4da5b183-3e04-495f-aa4a-076300998682" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/Product.css" afterDir="false" />
+    <list default="true" id="4da5b183-3e04-495f-aa4a-076300998682" name="Changes" comment="Update Product page">
+      <change afterPath="$PROJECT_DIR$/src/components/Catalog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Wishlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/masina2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/masina3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ShoppingCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShoppingCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/Product.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/Product.css" afterDir="false" />
+    </list>
+    <list id="c4fc2501-ba21-4e71-b96f-dbfc49f46748" name="Changes by Tudor" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/FirstPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FirstPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCard.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,28 +34,42 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="273msi33DAOOU3pecU1o14NLoRC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -52,8 +82,16 @@
       <option name="presentableId" value="Default" />
       <updated>1648557357252</updated>
       <workItem from="1648557360702" duration="1330000" />
-      <workItem from="1648559203359" duration="514000" />
+      <workItem from="1648559203359" duration="4655000" />
     </task>
+    <task id="LOCAL-00001" summary="Update Product page">
+      <created>1648560053404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648560053404</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,5 +107,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Update Product page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Product page" />
   </component>
 </project>
