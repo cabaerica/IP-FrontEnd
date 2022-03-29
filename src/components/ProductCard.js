@@ -8,7 +8,7 @@ const ProductCard = () => {
     //datele unui produs vor fi puse pe un card care va fi adaugat pe FirstPage
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top"  src="../images/masina.jpg" />
+      <Card.Img variant="top"  src= {require("../images/masina.jpg")} />
       <Card.Body>
         <Card.Text>
           Some quick example text to build on the card title and make up the bulk of

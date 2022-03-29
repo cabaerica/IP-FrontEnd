@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <Navbar bg="dark" expand="lg">
     <Container fluid>
-      <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+      <Navbar.Brand href="#" style = {{color: 'white'}}>BuyIT</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav
@@ -18,12 +18,8 @@ const NavBar = () => {
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
-          <Nav.Link href="#action1">Home</Nav.Link>
-          <Nav.Link href="#action2">Link</Nav.Link>
-          
-          <Nav.Link href="#" disabled>
-            Link
-          </Nav.Link>
+          <Nav.Link href="#action1" style = {{color: 'white'}}>Products</Nav.Link>
+          <Nav.Link href="#action2" style = {{color: 'white'}}>Cart</Nav.Link>
         </Nav>
         <Form className="d-flex">
           <FormControl
