@@ -1,5 +1,4 @@
 import React from 'react'
-import Card from './Card'
 
 const Product = () => {
   //pagina unui produs
