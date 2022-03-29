@@ -6,7 +6,8 @@ const FirstPage = () => {
   return (
     //<NavBar/>
     <div>
-      firstPage
+      <h1 allign = 'center'>Pagina in lucru!</h1>
+
      
     </div>
   )

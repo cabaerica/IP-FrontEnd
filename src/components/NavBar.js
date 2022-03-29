@@ -18,8 +18,9 @@ const NavBar = () => {
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
-          <Nav.Link href="#action1" style = {{color: 'white'}}>Products</Nav.Link>
-          <Nav.Link href="#action2" style = {{color: 'white'}}>Cart</Nav.Link>
+          <Nav.Link href="product" style = {{color: 'white'}}>Products</Nav.Link>
+          <Nav.Link href="cart" style = {{color: 'white'}}>Cart</Nav.Link>
+          <Nav.Link href="wishlist" style = {{color:'white'}}>Wishlist</Nav.Link>
         </Nav>
         <Form className="d-flex">
           <FormControl

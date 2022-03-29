@@ -11,14 +11,13 @@ const ProductCard = () => {
       <Card.Img variant="top"  src= {require("../images/masina.jpg")} />
       <Card.Body>
         <Card.Text>
-          Some quick example text to build on the card title and make up the bulk of
-          the card's content.
+          Masina spala foarte bine si suppeeerr bunaaa!!!!
         </Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">
-        <ListGroupItem>Pret</ListGroupItem>
-        <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-        <ListGroupItem>Vestibulum at eros</ListGroupItem>
+        <ListGroupItem>Pret :1199</ListGroupItem>
+        <ListGroupItem>Masina de spalat ARCTIC WB124</ListGroupItem>
+        <ListGroupItem>Descriere amanuntita</ListGroupItem>
       </ListGroup>
 
     </Card>
