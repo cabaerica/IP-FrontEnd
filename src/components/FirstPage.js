@@ -8,7 +8,6 @@ const FirstPage = () => {
     <div>
       <h1 allign = 'center'>Pagina in lucru!</h1>
 
-     
     </div>
   )
 }

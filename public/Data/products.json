@@ -1,0 +1,22 @@
+{
+  "id":"1",
+  "title":"Cos de rufe",
+  "description":"Cos de rufe XXL pentru rufe adevarate",
+  "authorId":"03",
+  "rating":"5Stars",
+  "price":"123.00",
+  "categoryId":"Menajer",
+  "characteristics":{
+    "title" : "value"
+  },
+  "files":[
+    {
+      "base64":"asdasdasdasdsada",
+      "uploadedAt":""
+    },
+    {
+      "base64":"asdsad",
+      "uploadedAt":""
+    }
+  ]
+}
