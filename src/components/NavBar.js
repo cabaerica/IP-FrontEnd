@@ -21,6 +21,7 @@ const NavBar = () => {
           <Nav.Link href="product" style = {{color: 'white'}}>Products</Nav.Link>
           <Nav.Link href="cart" style = {{color: 'white'}}>Cart</Nav.Link>
           <Nav.Link href="wishlist" style = {{color:'white'}}>Wishlist</Nav.Link>
+          <Nav.Link href="user" style = {{color:'white'}}>User</Nav.Link>
         </Nav>
         <Form className="d-flex">
           <FormControl

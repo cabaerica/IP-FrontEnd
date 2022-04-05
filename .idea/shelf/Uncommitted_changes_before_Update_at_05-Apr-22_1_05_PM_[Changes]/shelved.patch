@@ -1,0 +1,500 @@
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"my-app\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"dependencies\": {\r\n    \"@testing-library/jest-dom\": \"^5.16.3\",\r\n    \"@testing-library/react\": \"^12.1.4\",\r\n    \"@testing-library/user-event\": \"^13.5.0\",\r\n    \"bootstrap\": \"^5.1.3\",\r\n    \"react\": \"^17.0.2\",\r\n    \"react-bootstrap\": \"^2.2.2\",\r\n    \"react-dom\": \"^17.0.2\",\r\n    \"react-plantuml\": \"^0.0.8\",\r\n    \"react-router-dom\": \"^6.2.2\",\r\n    \"react-scripts\": \"5.0.0\",\r\n    \"web-vitals\": \"^2.1.4\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"test\": \"react-scripts test\",\r\n    \"eject\": \"react-scripts eject\"\r\n  },\r\n  \"eslintConfig\": {\r\n    \"extends\": [\r\n      \"react-app\",\r\n      \"react-app/jest\"\r\n    ]\r\n  },\r\n  \"browserslist\": {\r\n    \"production\": [\r\n      \">0.2%\",\r\n      \"not dead\",\r\n      \"not op_mini all\"\r\n    ],\r\n    \"development\": [\r\n      \"last 1 chrome version\",\r\n      \"last 1 firefox version\",\r\n      \"last 1 safari version\"\r\n    ]\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package.json b/package.json
+--- a/package.json	(revision ac458e3d625ea22618493fdc21fe4f5e967200b0)
++++ b/package.json	(date 1649153053589)
+@@ -4,14 +4,14 @@
+   "private": true,
+   "dependencies": {
+     "@testing-library/jest-dom": "^5.16.3",
+-    "@testing-library/react": "^12.1.4",
+     "@testing-library/user-event": "^13.5.0",
++    "axios": "^0.26.1",
+     "bootstrap": "^5.1.3",
+     "react": "^17.0.2",
+-    "react-bootstrap": "^2.2.2",
++    "react-bootstrap": "^2.2.3",
+     "react-dom": "^17.0.2",
+     "react-plantuml": "^0.0.8",
+-    "react-router-dom": "^6.2.2",
++    "react-router-dom": "^6.3.0",
+     "react-scripts": "5.0.0",
+     "web-vitals": "^2.1.4"
+   },
+@@ -38,5 +38,10 @@
+       "last 1 firefox version",
+       "last 1 safari version"
+     ]
++  },
++  "devDependencies": {
++    "@testing-library/react": "^13.0.0",
++    "jest-dom": "^4.0.0",
++    "react-test-render": "^1.1.2"
+   }
+ }
+Index: package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package-lock.json b/package-lock.json
+--- a/package-lock.json	(revision ac458e3d625ea22618493fdc21fe4f5e967200b0)
++++ b/package-lock.json	(date 1649153053588)
+@@ -9,16 +9,21 @@
+       "version": "0.1.0",
+       "dependencies": {
+         "@testing-library/jest-dom": "^5.16.3",
+-        "@testing-library/react": "^12.1.4",
+         "@testing-library/user-event": "^13.5.0",
++        "axios": "^0.26.1",
+         "bootstrap": "^5.1.3",
+         "react": "^17.0.2",
+-        "react-bootstrap": "^2.2.2",
++        "react-bootstrap": "^2.2.3",
+         "react-dom": "^17.0.2",
+         "react-plantuml": "^0.0.8",
+-        "react-router-dom": "^6.2.2",
++        "react-router-dom": "^6.3.0",
+         "react-scripts": "5.0.0",
+         "web-vitals": "^2.1.4"
++      },
++      "devDependencies": {
++        "@testing-library/react": "^13.0.0",
++        "jest-dom": "^4.0.0",
++        "react-test-render": "^1.1.2"
+       }
+     },
+     "node_modules/@ampproject/remapping": {
+@@ -2836,9 +2841,9 @@
+       }
+     },
+     "node_modules/@restart/hooks": {
+-      "version": "0.4.5",
+-      "resolved": "https://registry.npmjs.org/@restart/hooks/-/hooks-0.4.5.tgz",
+-      "integrity": "sha512-tLGtY0aHeIfT7aPwUkvQuhIy3+q3w4iqmUzFLPlOAf/vNUacLaBt1j/S//jv/dQhenRh8jvswyMojCwmLvJw8A==",
++      "version": "0.4.6",
++      "resolved": "https://registry.npmjs.org/@restart/hooks/-/hooks-0.4.6.tgz",
++      "integrity": "sha512-FzpEzy6QeLB3OpUrC9OQD/lWCluQmilLfRGa/DqbB6OmV05AEt/0Lgn3Jf6l27UIJMK0qFmNcps6p8DNLXa6Pw==",
+       "dependencies": {
+         "dequal": "^2.0.2"
+       },
+@@ -3360,20 +3365,21 @@
+       }
+     },
+     "node_modules/@testing-library/react": {
+-      "version": "12.1.4",
+-      "resolved": "https://registry.npmjs.org/@testing-library/react/-/react-12.1.4.tgz",
+-      "integrity": "sha512-jiPKOm7vyUw311Hn/HlNQ9P8/lHNtArAx0PisXyFixDDvfl8DbD6EUdbshK5eqauvBSvzZd19itqQ9j3nferJA==",
++      "version": "13.0.0",
++      "resolved": "https://registry.npmjs.org/@testing-library/react/-/react-13.0.0.tgz",
++      "integrity": "sha512-p0lYA1M7uoEmk2LnCbZLGmHJHyH59sAaZVXChTXlyhV/PRW9LoIh4mdf7tiXsO8BoNG+vN8UnFJff1hbZeXv+w==",
++      "dev": true,
+       "dependencies": {
+         "@babel/runtime": "^7.12.5",
+-        "@testing-library/dom": "^8.0.0",
++        "@testing-library/dom": "^8.5.0",
+         "@types/react-dom": "*"
+       },
+       "engines": {
+         "node": ">=12"
+       },
+       "peerDependencies": {
+-        "react": "*",
+-        "react-dom": "*"
++        "react": "^18.0.0",
++        "react-dom": "^18.0.0"
+       }
+     },
+     "node_modules/@testing-library/user-event": {
+@@ -3647,6 +3653,7 @@
+       "version": "17.0.14",
+       "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-17.0.14.tgz",
+       "integrity": "sha512-H03xwEP1oXmSfl3iobtmQ/2dHF5aBHr8aUMwyGZya6OW45G+xtdzmq6HkncefiBt5JU8DVyaWl/nWZbjZCnzAQ==",
++      "dev": true,
+       "dependencies": {
+         "@types/react": "*"
+       }
+@@ -4522,6 +4529,14 @@
+         "node": ">=4"
+       }
+     },
++    "node_modules/axios": {
++      "version": "0.26.1",
++      "resolved": "https://registry.npmjs.org/axios/-/axios-0.26.1.tgz",
++      "integrity": "sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==",
++      "dependencies": {
++        "follow-redirects": "^1.14.8"
++      }
++    },
+     "node_modules/axobject-query": {
+       "version": "2.2.0",
+       "resolved": "https://registry.npmjs.org/axobject-query/-/axobject-query-2.2.0.tgz",
+@@ -8351,6 +8366,15 @@
+         "url": "https://opencollective.com/immer"
+       }
+     },
++    "node_modules/immutable": {
++      "version": "3.7.6",
++      "resolved": "https://registry.npmjs.org/immutable/-/immutable-3.7.6.tgz",
++      "integrity": "sha1-E7TTyxK++hVIKib+Gy665kAHHks=",
++      "dev": true,
++      "engines": {
++        "node": ">=0.8.0"
++      }
++    },
+     "node_modules/import-fresh": {
+       "version": "3.3.0",
+       "resolved": "https://registry.npmjs.org/import-fresh/-/import-fresh-3.3.0.tgz",
+@@ -9400,6 +9424,13 @@
+         "node": "^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0"
+       }
+     },
++    "node_modules/jest-dom": {
++      "version": "4.0.0",
++      "resolved": "https://registry.npmjs.org/jest-dom/-/jest-dom-4.0.0.tgz",
++      "integrity": "sha512-gBxYZlZB1Jgvf2gP2pRfjjUWF8woGBHj/g5rAQgFPB/0K2atGuhVcPO+BItyjWeKg9zM+dokgcMOH01vrWVMFA==",
++      "deprecated": "🚨 jest-dom has moved to @testing-library/jest-dom. Please uninstall jest-dom and install @testing-library/jest-dom instead, or use an older version of jest-dom. Learn more about this change here: https://github.com/testing-library/dom-testing-library/issues/260 Thanks! :)",
++      "dev": true
++    },
+     "node_modules/jest-each": {
+       "version": "27.5.1",
+       "resolved": "https://registry.npmjs.org/jest-each/-/jest-each-27.5.1.tgz",
+@@ -13222,6 +13253,16 @@
+         "node": ">=0.10.0"
+       }
+     },
++    "node_modules/react-addons-test-utils": {
++      "version": "15.6.2",
++      "resolved": "https://registry.npmjs.org/react-addons-test-utils/-/react-addons-test-utils-15.6.2.tgz",
++      "integrity": "sha1-wStu/cIkfBDae4dw0YUICnsEcVY=",
++      "dev": true,
++      "peer": true,
++      "peerDependencies": {
++        "react-dom": "^15.4.2"
++      }
++    },
+     "node_modules/react-app-polyfill": {
+       "version": "3.0.0",
+       "resolved": "https://registry.npmjs.org/react-app-polyfill/-/react-app-polyfill-3.0.0.tgz",
+@@ -13239,12 +13280,12 @@
+       }
+     },
+     "node_modules/react-bootstrap": {
+-      "version": "2.2.2",
+-      "resolved": "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-2.2.2.tgz",
+-      "integrity": "sha512-zfVGUU14BMZo7KqR1QHXBAqpbWa6bu4S9dZ6O4rd/hDZi1tiNeGkISbuBednb1TxyXrOwpvnvlHNk3OuYQNq6w==",
++      "version": "2.2.3",
++      "resolved": "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-2.2.3.tgz",
++      "integrity": "sha512-gXsAEBdDUHnOpJ2C+DDQ4mFt7tN6u6qWnTH3tqiE9jUvV6gGY8uHFp0iGBsM+yjrBwmR6bqCBFh8Z82aQj1LSw==",
+       "dependencies": {
+         "@babel/runtime": "^7.17.2",
+-        "@restart/hooks": "^0.4.5",
++        "@restart/hooks": "^0.4.6",
+         "@restart/ui": "^1.2.0",
+         "@types/invariant": "^2.2.35",
+         "@types/prop-types": "^15.7.4",
+@@ -13485,9 +13526,9 @@
+       }
+     },
+     "node_modules/react-router": {
+-      "version": "6.2.2",
+-      "resolved": "https://registry.npmjs.org/react-router/-/react-router-6.2.2.tgz",
+-      "integrity": "sha512-/MbxyLzd7Q7amp4gDOGaYvXwhEojkJD5BtExkuKmj39VEE0m3l/zipf6h2WIB2jyAO0lI6NGETh4RDcktRm4AQ==",
++      "version": "6.3.0",
++      "resolved": "https://registry.npmjs.org/react-router/-/react-router-6.3.0.tgz",
++      "integrity": "sha512-7Wh1DzVQ+tlFjkeo+ujvjSqSJmkt1+8JO+T5xklPlgrh70y7ogx75ODRW0ThWhY7S+6yEDks8TYrtQe/aoboBQ==",
+       "dependencies": {
+         "history": "^5.2.0"
+       },
+@@ -13496,12 +13537,12 @@
+       }
+     },
+     "node_modules/react-router-dom": {
+-      "version": "6.2.2",
+-      "resolved": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.2.2.tgz",
+-      "integrity": "sha512-AtYEsAST7bDD4dLSQHDnk/qxWLJdad5t1HFa1qJyUrCeGgEuCSw0VB/27ARbF9Fi/W5598ujvJOm3ujUCVzuYQ==",
++      "version": "6.3.0",
++      "resolved": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.3.0.tgz",
++      "integrity": "sha512-uaJj7LKytRxZNQV8+RbzJWnJ8K2nPsOOEuX7aQstlMZKQT0164C+X2w6bnkqU3sjtLvpd5ojrezAyfZ1+0sStw==",
+       "dependencies": {
+         "history": "^5.2.0",
+-        "react-router": "6.2.2"
++        "react-router": "6.3.0"
+       },
+       "peerDependencies": {
+         "react": ">=16.8",
+@@ -13580,6 +13621,32 @@
+         }
+       }
+     },
++    "node_modules/react-test-render": {
++      "version": "1.1.2",
++      "resolved": "https://registry.npmjs.org/react-test-render/-/react-test-render-1.1.2.tgz",
++      "integrity": "sha512-XurcR3Eh0TwFopBShDNgPny29Z8wczAFnKsxUqSSgNN6FrpsNg39Q3/13bK5oBFWOLod3enZG698HZNlJ3oRsw==",
++      "dev": true,
++      "dependencies": {
++        "immutable": "3.7.x",
++        "lodash": "^4.17.15",
++        "react-shallow-testutils": "2.0.x"
++      },
++      "peerDependencies": {
++        "react": "15.x.x",
++        "react-addons-test-utils": "15.x.x"
++      }
++    },
++    "node_modules/react-test-render/node_modules/react-shallow-testutils": {
++      "version": "2.0.0",
++      "resolved": "https://registry.npmjs.org/react-shallow-testutils/-/react-shallow-testutils-2.0.0.tgz",
++      "integrity": "sha1-kIe0CzaLEkZ0x7/Pn91q2YORSpc=",
++      "deprecated": "Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.",
++      "dev": true,
++      "peerDependencies": {
++        "react": "^15.0.0",
++        "react-addons-test-utils": "^15.0.0"
++      }
++    },
+     "node_modules/react-transition-group": {
+       "version": "4.4.2",
+       "resolved": "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.2.tgz",
+@@ -18318,9 +18385,9 @@
+       }
+     },
+     "@restart/hooks": {
+-      "version": "0.4.5",
+-      "resolved": "https://registry.npmjs.org/@restart/hooks/-/hooks-0.4.5.tgz",
+-      "integrity": "sha512-tLGtY0aHeIfT7aPwUkvQuhIy3+q3w4iqmUzFLPlOAf/vNUacLaBt1j/S//jv/dQhenRh8jvswyMojCwmLvJw8A==",
++      "version": "0.4.6",
++      "resolved": "https://registry.npmjs.org/@restart/hooks/-/hooks-0.4.6.tgz",
++      "integrity": "sha512-FzpEzy6QeLB3OpUrC9OQD/lWCluQmilLfRGa/DqbB6OmV05AEt/0Lgn3Jf6l27UIJMK0qFmNcps6p8DNLXa6Pw==",
+       "requires": {
+         "dequal": "^2.0.2"
+       }
+@@ -18662,12 +18729,13 @@
+       }
+     },
+     "@testing-library/react": {
+-      "version": "12.1.4",
+-      "resolved": "https://registry.npmjs.org/@testing-library/react/-/react-12.1.4.tgz",
+-      "integrity": "sha512-jiPKOm7vyUw311Hn/HlNQ9P8/lHNtArAx0PisXyFixDDvfl8DbD6EUdbshK5eqauvBSvzZd19itqQ9j3nferJA==",
++      "version": "13.0.0",
++      "resolved": "https://registry.npmjs.org/@testing-library/react/-/react-13.0.0.tgz",
++      "integrity": "sha512-p0lYA1M7uoEmk2LnCbZLGmHJHyH59sAaZVXChTXlyhV/PRW9LoIh4mdf7tiXsO8BoNG+vN8UnFJff1hbZeXv+w==",
++      "dev": true,
+       "requires": {
+         "@babel/runtime": "^7.12.5",
+-        "@testing-library/dom": "^8.0.0",
++        "@testing-library/dom": "^8.5.0",
+         "@types/react-dom": "*"
+       }
+     },
+@@ -18929,6 +18997,7 @@
+       "version": "17.0.14",
+       "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-17.0.14.tgz",
+       "integrity": "sha512-H03xwEP1oXmSfl3iobtmQ/2dHF5aBHr8aUMwyGZya6OW45G+xtdzmq6HkncefiBt5JU8DVyaWl/nWZbjZCnzAQ==",
++      "dev": true,
+       "requires": {
+         "@types/react": "*"
+       }
+@@ -19573,6 +19642,14 @@
+       "resolved": "https://registry.npmjs.org/axe-core/-/axe-core-4.4.1.tgz",
+       "integrity": "sha512-gd1kmb21kwNuWr6BQz8fv6GNECPBnUasepcoLbekws23NVBLODdsClRZ+bQ8+9Uomf3Sm3+Vwn0oYG9NvwnJCw=="
+     },
++    "axios": {
++      "version": "0.26.1",
++      "resolved": "https://registry.npmjs.org/axios/-/axios-0.26.1.tgz",
++      "integrity": "sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==",
++      "requires": {
++        "follow-redirects": "^1.14.8"
++      }
++    },
+     "axobject-query": {
+       "version": "2.2.0",
+       "resolved": "https://registry.npmjs.org/axobject-query/-/axobject-query-2.2.0.tgz",
+@@ -22372,6 +22449,12 @@
+       "resolved": "https://registry.npmjs.org/immer/-/immer-9.0.12.tgz",
+       "integrity": "sha512-lk7UNmSbAukB5B6dh9fnh5D0bJTOFKxVg2cyJWTYrWRfhLrLMBquONcUs3aFq507hNoIZEDDh8lb8UtOizSMhA=="
+     },
++    "immutable": {
++      "version": "3.7.6",
++      "resolved": "https://registry.npmjs.org/immutable/-/immutable-3.7.6.tgz",
++      "integrity": "sha1-E7TTyxK++hVIKib+Gy665kAHHks=",
++      "dev": true
++    },
+     "import-fresh": {
+       "version": "3.3.0",
+       "resolved": "https://registry.npmjs.org/import-fresh/-/import-fresh-3.3.0.tgz",
+@@ -23097,6 +23180,12 @@
+         "detect-newline": "^3.0.0"
+       }
+     },
++    "jest-dom": {
++      "version": "4.0.0",
++      "resolved": "https://registry.npmjs.org/jest-dom/-/jest-dom-4.0.0.tgz",
++      "integrity": "sha512-gBxYZlZB1Jgvf2gP2pRfjjUWF8woGBHj/g5rAQgFPB/0K2atGuhVcPO+BItyjWeKg9zM+dokgcMOH01vrWVMFA==",
++      "dev": true
++    },
+     "jest-each": {
+       "version": "27.5.1",
+       "resolved": "https://registry.npmjs.org/jest-each/-/jest-each-27.5.1.tgz",
+@@ -25751,6 +25840,14 @@
+         "object-assign": "^4.1.1"
+       }
+     },
++    "react-addons-test-utils": {
++      "version": "15.6.2",
++      "resolved": "https://registry.npmjs.org/react-addons-test-utils/-/react-addons-test-utils-15.6.2.tgz",
++      "integrity": "sha1-wStu/cIkfBDae4dw0YUICnsEcVY=",
++      "dev": true,
++      "peer": true,
++      "requires": {}
++    },
+     "react-app-polyfill": {
+       "version": "3.0.0",
+       "resolved": "https://registry.npmjs.org/react-app-polyfill/-/react-app-polyfill-3.0.0.tgz",
+@@ -25765,12 +25862,12 @@
+       }
+     },
+     "react-bootstrap": {
+-      "version": "2.2.2",
+-      "resolved": "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-2.2.2.tgz",
+-      "integrity": "sha512-zfVGUU14BMZo7KqR1QHXBAqpbWa6bu4S9dZ6O4rd/hDZi1tiNeGkISbuBednb1TxyXrOwpvnvlHNk3OuYQNq6w==",
++      "version": "2.2.3",
++      "resolved": "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-2.2.3.tgz",
++      "integrity": "sha512-gXsAEBdDUHnOpJ2C+DDQ4mFt7tN6u6qWnTH3tqiE9jUvV6gGY8uHFp0iGBsM+yjrBwmR6bqCBFh8Z82aQj1LSw==",
+       "requires": {
+         "@babel/runtime": "^7.17.2",
+-        "@restart/hooks": "^0.4.5",
++        "@restart/hooks": "^0.4.6",
+         "@restart/ui": "^1.2.0",
+         "@types/invariant": "^2.2.35",
+         "@types/prop-types": "^15.7.4",
+@@ -25966,20 +26063,20 @@
+       "integrity": "sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A=="
+     },
+     "react-router": {
+-      "version": "6.2.2",
+-      "resolved": "https://registry.npmjs.org/react-router/-/react-router-6.2.2.tgz",
+-      "integrity": "sha512-/MbxyLzd7Q7amp4gDOGaYvXwhEojkJD5BtExkuKmj39VEE0m3l/zipf6h2WIB2jyAO0lI6NGETh4RDcktRm4AQ==",
++      "version": "6.3.0",
++      "resolved": "https://registry.npmjs.org/react-router/-/react-router-6.3.0.tgz",
++      "integrity": "sha512-7Wh1DzVQ+tlFjkeo+ujvjSqSJmkt1+8JO+T5xklPlgrh70y7ogx75ODRW0ThWhY7S+6yEDks8TYrtQe/aoboBQ==",
+       "requires": {
+         "history": "^5.2.0"
+       }
+     },
+     "react-router-dom": {
+-      "version": "6.2.2",
+-      "resolved": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.2.2.tgz",
+-      "integrity": "sha512-AtYEsAST7bDD4dLSQHDnk/qxWLJdad5t1HFa1qJyUrCeGgEuCSw0VB/27ARbF9Fi/W5598ujvJOm3ujUCVzuYQ==",
++      "version": "6.3.0",
++      "resolved": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.3.0.tgz",
++      "integrity": "sha512-uaJj7LKytRxZNQV8+RbzJWnJ8K2nPsOOEuX7aQstlMZKQT0164C+X2w6bnkqU3sjtLvpd5ojrezAyfZ1+0sStw==",
+       "requires": {
+         "history": "^5.2.0",
+-        "react-router": "6.2.2"
++        "react-router": "6.3.0"
+       }
+     },
+     "react-scripts": {
+@@ -26037,6 +26134,26 @@
+         "workbox-webpack-plugin": "^6.4.1"
+       }
+     },
++    "react-test-render": {
++      "version": "1.1.2",
++      "resolved": "https://registry.npmjs.org/react-test-render/-/react-test-render-1.1.2.tgz",
++      "integrity": "sha512-XurcR3Eh0TwFopBShDNgPny29Z8wczAFnKsxUqSSgNN6FrpsNg39Q3/13bK5oBFWOLod3enZG698HZNlJ3oRsw==",
++      "dev": true,
++      "requires": {
++        "immutable": "3.7.x",
++        "lodash": "^4.17.15",
++        "react-shallow-testutils": "2.0.x"
++      },
++      "dependencies": {
++        "react-shallow-testutils": {
++          "version": "2.0.0",
++          "resolved": "https://registry.npmjs.org/react-shallow-testutils/-/react-shallow-testutils-2.0.0.tgz",
++          "integrity": "sha1-kIe0CzaLEkZ0x7/Pn91q2YORSpc=",
++          "dev": true,
++          "requires": {}
++        }
++      }
++    },
+     "react-transition-group": {
+       "version": "4.4.2",
+       "resolved": "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.2.tgz",
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"4da5b183-3e04-495f-aa4a-076300998682\" name=\"Changes\" comment=\"Update Product page\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/components/Catalog.js\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/components/Wishlist.js\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/images/masina2.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/images/masina3.jpg\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/package-lock.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/package-lock.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/package.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/package.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/App.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/App.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/components/Product.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/components/Product.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/components/ShoppingCart.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/components/ShoppingCart.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/stylesheets/Product.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/stylesheets/Product.css\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"c4fc2501-ba21-4e71-b96f-dbfc49f46748\" name=\"Changes by Tudor\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/components/FirstPage.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/components/FirstPage.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/components/NavBar.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/components/NavBar.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/components/ProductCard.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/components/ProductCard.js\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"CSS File\" />\r\n        <option value=\"JavaScript File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"273msi33DAOOU3pecU1o14NLoRC\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"4da5b183-3e04-495f-aa4a-076300998682\" name=\"Changes\" comment=\"\" />\r\n      <created>1648557357252</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1648557357252</updated>\r\n      <workItem from=\"1648557360702\" duration=\"1330000\" />\r\n      <workItem from=\"1648559203359\" duration=\"4655000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Update Product page\">\r\n      <created>1648560053404</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648560053404</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"Update Product page\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Update Product page\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ac458e3d625ea22618493fdc21fe4f5e967200b0)
++++ b/.idea/workspace.xml	(date 1649153041614)
+@@ -5,23 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="4da5b183-3e04-495f-aa4a-076300998682" name="Changes" comment="Update Product page">
+-      <change afterPath="$PROJECT_DIR$/src/components/Catalog.js" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/components/Wishlist.js" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/images/masina2.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/images/masina3.jpg" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/components/ShoppingCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShoppingCart.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/stylesheets/Product.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/Product.css" afterDir="false" />
+-    </list>
+-    <list id="c4fc2501-ba21-4e71-b96f-dbfc49f46748" name="Changes by Tudor" comment="">
+-      <change beforePath="$PROJECT_DIR$/src/components/FirstPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FirstPage.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/components/ProductCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCard.js" afterDir="false" />
+     </list>
++    <list id="c4fc2501-ba21-4e71-b96f-dbfc49f46748" name="Changes by Tudor" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -65,13 +51,25 @@
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+     <property name="list.type.of.created.stylesheet" value="CSS" />
+     <property name="node.js.detected.package.eslint" value="true" />
+     <property name="node.js.detected.package.tslint" value="true" />
+     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+     <property name="node.js.selected.package.tslint" value="(autodetect)" />
++    <property name="nodejs_interpreter_path" value="node" />
+     <property name="nodejs_package_manager_path" value="npm" />
+     <property name="vue.rearranger.settings.migration" value="true" />
++  </component>
++  <component name="RunManager">
++    <configuration name="App.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/App.js" working-dir="$PROJECT_DIR$/src">
++      <method v="2" />
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Node.js.App.js" />
++      </list>
++    </recent_temporary>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+@@ -83,6 +81,8 @@
+       <updated>1648557357252</updated>
+       <workItem from="1648557360702" duration="1330000" />
+       <workItem from="1648559203359" duration="4655000" />
++      <workItem from="1649148992284" duration="844000" />
++      <workItem from="1649152736136" duration="304000" />
+     </task>
+     <task id="LOCAL-00001" summary="Update Product page">
+       <created>1648560053404</created>
