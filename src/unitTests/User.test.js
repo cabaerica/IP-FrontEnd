@@ -1,8 +1,8 @@
-import Enzyme, { configure, shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import React from 'react'
-import User from '../components/User'
-Enzyme.configure({ adapter: new Adapter() });
+
+import React from 'react';
+import User from '../components/User';
+import {shallow} from "enzyme";
+
 
 describe("should render ,..", () => {
     it('should render ..', () => {
