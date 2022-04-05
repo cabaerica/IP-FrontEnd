@@ -1,43 +1,32 @@
 import './stylesheets/App.css';
 import Product from './components/Product';
 import ProductCard from './components/ProductCard'
-import NavBar from './components/NavBar'
+import NavBar from './components/NavBar';
+import FirstPage from "./components/FirstPage";
+import ShoppingCart from "./components/ShoppingCart";
+import Wishlist from "./components/Wishlist";
+import Catalog from "./components/Catalog";
+import User from './components/User'
+import axios from "axios";
+import {useEffect, useState} from "react";
 import {
     BrowserRouter,
     Routes, // instead of "Switch"
     Route,
 } from "react-router-dom";
-import FirstPage from "./components/FirstPage";
-import ShoppingCart from "./components/ShoppingCart";
-import Wishlist from "./components/Wishlist";
-import Catalog from "./components/Catalog";
-import axios from "axios";
-import {useEffect, useState} from "react";
+
+const URL_CART = 'Data/cart.json';
+const URL_PRODUCT = 'Data/products.json';
+const URL_USER = 'Data/client.json';
 
 function App() {
-    const [data,setData] = useState([]);
-    const getDataProducts=()=>{
-        fetch('Data/products.json'
-            ,{
-                 method:'GET',
-                headers : {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                }
-            }
-        )
-            .then(function(response){
-                console.log(response)
-                return response.json();
-            })
-            .then(function(myJson) {
-                console.log(myJson);
-                setData(myJson)
-            });
-    }
-
-    const getDataCart=()=>{
-        fetch('Data/cart.json'
+    const [userData, setUserData] = useState([]);
+    const [productData, setProductData] = useState([{}]);
+    const [cartData, setCartData] = useState([]);
+    const [wishlistData, setWishlistData] = useState([]);
+    //folosim parametri pentru a nu avea 4 functii identice pentru fiecare data
+    const getData=(URL, setData)=>{
+        fetch(URL
             ,{
                 method:'GET',
                 headers : {
@@ -56,91 +45,93 @@ function App() {
             });
     }
 
-    const getDataClient=()=>{
-        fetch('Data/client.json'
-            ,{
-                method:'GET',
-                headers : {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                }
-            }
-        )
-            .then(function(response){
-                console.log(response)
-                return response.json();
-            })
-            .then(function(myJson) {
-                console.log(myJson);
-                setData(myJson)
-            });
-    }
-
-    const postData=async ()=> {
-        fetch('Data/cart.json',
+    const postData=async (URL, setData, data)=> {
+        fetch(URL,
             {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify([{
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
 
-                title: "Calculator",
-                quantity: "3"
-            }])
-        }).then(function (response) {
+                    title: "Calculator",
+                    quantity: "3"
+                })
+            }).then(function (response) {
             console.log(response)
             return response.json();
         })
             .then(function (myJson) {
-                console.log(myJson);
-                setData(myJson)
+                console.log(data.concat(myJson.body));
+                setData(data.push(myJson.body))
+            });
+    }
+
+    const putData=async (URL, setData,data)=> {
+        fetch(URL,
+            {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+
+                    title: "Calculator MARIA1111A",
+                    quantity: "5"
+                })
+            }).then(function (response) {
+            console.log(response)
+            return response.json();
+        })
+            .then(function (myJson) {
+                console.log("-------");
+                setData(data)
             });
     }
 
     //-->Cosmin incepe codul
 
     useEffect(()=>{
-        getDataProducts()
-        getDataCart()
-        getDataClient()
+        getData(URL_PRODUCT, setProductData)
+        getData(URL_CART, setCartData)
+        getData(URL_USER, setUserData)
 
-        //postDataProducts() //TUDOR
-        //postDataClient() //Tudor
-        //postDataCart() //Tudor
+        //postData('http://localhost:8000/data/', setProductData,productData) //TUDOR
+        //postData('http://localhost:8000/data/', setProductData,productData) //TUDOR
+        //postData(URL_CART, setCartData) //Tudor
+        //postData(URL_USER, setUserData) //Tudor
 
-        //putDataProducts() //Cosmin
-        //putDataCart() //Cosmin
-        //putDataClient() //Cosmin
+        putData('http://localhost:8000/data/1', setProductData,productData) //Cosmin
+        //putData(URL_CART, setCartData) //Cosmin
+        //putData(URL_USER, setUserData) //Cosmin
 
     },[])
 
+    /*
     return(
         <div className="App">
             {
-                data && data.length>0 && data.map((item)=><h1>{item.title}</h1>)
+                productData && productData.length>0 && productData.map((item)=><h1>{item.title}</h1>)
             }
         </div>
-    );
-
-
-
-
-    /*return (
-        <BrowserRouter>
-            <NavBar></NavBar>
-            <Routes>
-                <Route path="/product" element={<Catalog/>} />
-                <Route path="/cart" element={<ShoppingCart/>} />
-                <Route path="/wishlist" element={<Wishlist/>} />
-                <Route path="/" element={<FirstPage/>} />
-            </Routes>
-        </BrowserRouter>
     );*/
 
 
 
+
+    return (
+        <BrowserRouter>
+            <NavBar></NavBar>
+            <Routes>
+                <Route path="/product" element={<Catalog/>} productData = {productData}/>
+                <Route path="/cart" element={<ShoppingCart/>} cartData = {cartData}/>
+                <Route path="/wishlist" element={<Wishlist/>} wishlistData = {wishlistData}/>
+                <Route path="/user" element={<User/>} userData = {userData}/>
+                <Route path="/" element={<FirstPage/>} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
