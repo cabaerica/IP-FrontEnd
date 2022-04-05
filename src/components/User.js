@@ -1,14 +1,16 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button';
 
 const User = (userData) => {
-    //pagina unui produs
-    console.log('------------');
-    console.log(userData);
-    return (
-        <div>
-            <h1>In lucru!</h1>
-        </div>
-    )
+    console.log('----------')
+    console.log(userData)
+
+  return (
+    <div>
+        User
+        <Button variant="outline-success" id = "button-test">Search</Button>
+    </div>
+  )
 }
 
 export default User
