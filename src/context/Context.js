@@ -7,7 +7,7 @@ faker.seed(99);
 
 const Context = ({ children }) => {
      const products = [...Array(20)].map(() => ({
-          id: faker.datatype.uuid(),
+          id: faker.datatype.uuid(), //aici trebuie facute requesturile
           name: faker.commerce.productName(),
           price: faker.commerce.price(),
           image: faker.image.image(),
