@@ -1,14 +1,20 @@
 {
   "clients": [
     {
-      "title": "Calculator MARIAA",
-      "quantity": "5",
-      "id": "1"
-    },
-    {
       "name": "Alex",
       "prenume": "Pomohaci",
-      "balance": "100"
+      "balance": "100",
+      "id": "01"
+    },
+    {
+      "title": "Calculator",
+      "quantity": "3",
+      "id": "JMJKJyD"
+    },
+    {
+      "title": "Calculator",
+      "quantity": "3",
+      "id": "n_Hzgx3"
     }
   ]
 }

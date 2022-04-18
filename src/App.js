@@ -1,26 +1,21 @@
-import './stylesheets/App.css';
-import Product from './components/Product';
-import ProductCard from './components/ProductCard'
-import NavBar from './components/NavBar';
-import FirstPage from "./components/FirstPage";
-import ShoppingCart from "./components/ShoppingCart";
-import Wishlist from "./components/Wishlist";
-import Catalog from "./components/Catalog";
-import User from './components/User'
-import axios from "axios";
-import {useEffect, useState} from "react";
+
 import {
     BrowserRouter,
-    Routes, // instead of "Switch"
     Route,
+    Routes
 } from "react-router-dom";
+import Header from "./components/Header";
+import Cart from "./components/Cart";
+import Home from "./components/Home";
 
-const URL_CART = 'http://localhost:8001/cart';
-const URL_PRODUCT = 'http://localhost:8000/products';
-const URL_USER = 'http://localhost:8002/clients';
+//const URL_CART = 'http://localhost:8002/cart';
+//const URL_PRODUCT = 'http://localhost:8001/products';
+//const URL_USER = 'http://localhost:8000/clients';
+
+
 
 function App() {
-    const [userData, setUserData] = useState([]);
+    /*const [userData, setUserData] = useState([]);
     const [productData, setProductData] = useState([{}]);
     const [cartData, setCartData] = useState([]);
     const [wishlistData, setWishlistData] = useState([]);
@@ -55,9 +50,8 @@ function App() {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-
-                    title: "Calculator",
-                    quantity: "3"
+                    title: "MEtoda POST",
+                    quantity: "2"
                 })
             }).then(function (response) {
             console.log(response)
@@ -78,7 +72,7 @@ function App() {
                 },
                 body: JSON.stringify({
 
-                    title: "Calculator MARIAA",
+                    title: "MEtoda PUT!!",
                     quantity: "5"
                 })
             }).then(function (response) {
@@ -101,16 +95,18 @@ function App() {
         getData(URL_PRODUCT, setProductData)
         getData(URL_CART, setCartData)
         getData(URL_USER, setUserData)
-
         postData(URL_PRODUCT, setProductData,productData) //TUDOR
         //postData(URL_PRODUCT, setProductData,productData) //TUDOR
         //postData(URL_CART, setCartData,cartData) //Tudor
         //postData(URL_USER, setUserData,userData) //Tudor
 
-        putData(URL_PRODUCT+'/wlmE1k3', setProductData, productData) //Cosmin
-        putData(URL_CART +'/A5kxWl2', setCartData,cartData) //Cosmin
-        putData(URL_USER +'/1', setUserData,userData) //Cosmin
-        deleteData(URL_PRODUCT+'/BOfaMNX')
+        putData(URL_PRODUCT+'/FwIQJYO', setProductData, productData) //Cosmin
+        //putData(URL_CART +'/A5kxWl2', setCartData,cartData) //Cosmin
+        //putData(URL_USER +'/1', setUserData,userData) //Cosmin
+
+        deleteData(URL_PRODUCT+'/FwIQJYO')
+        //deleteData(URL_CART+'/oYfprmE')
+        //deleteData(URL_USER+'/4ouVoUP')
 
     }, [])
 
@@ -124,18 +120,19 @@ function App() {
     );*/
 
 
-    return (
+
+
+    return(
         <BrowserRouter>
-            <NavBar></NavBar>
+            <Header/>
             <Routes>
-                <Route path="/product" element={<Catalog/>} productData={productData}/>
-                <Route path="/cart" element={<ShoppingCart/>} cartData={cartData}/>
-                <Route path="/wishlist" element={<Wishlist/>} wishlistData={wishlistData}/>
-                <Route path="/user" element={<User/>} userData={userData}/>
-                <Route path="/" element={<FirstPage/>}/>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/cart" element={<Cart/>}/>
+
+
             </Routes>
         </BrowserRouter>
-    );
+        );
 }
 
 export default App;

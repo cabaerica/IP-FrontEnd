@@ -5,13 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da5b183-3e04-495f-aa4a-076300998682" name="Changes" comment="Update Product page">
-      <change afterPath="$PROJECT_DIR$/Data/cart.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/client.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/product.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05-Apr-22_1_05_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05-Apr-22_1_05_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Css/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Filters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Rating.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SingleProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/Context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/Reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05-Apr-22_1_05_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05-Apr-22_1_05_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/cart.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/cart.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/client.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/client.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/product.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/product.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Catalog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Favorites.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Product.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ShoppingCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShoppingCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/User.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Wishlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/masina.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/masina2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/masina3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/App.css" afterDir="false" />
     </list>
     <list id="c4fc2501-ba21-4e71-b96f-dbfc49f46748" name="Changes by Tudor" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +82,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ip" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -89,6 +114,11 @@
       <workItem from="1648634623204" duration="112000" />
       <workItem from="1648804907481" duration="22000" />
       <workItem from="1649084982975" duration="10636000" />
+      <workItem from="1649164163718" duration="6015000" />
+      <workItem from="1649408813816" duration="54000" />
+      <workItem from="1650119868101" duration="11785000" />
+      <workItem from="1650181795708" duration="11000" />
+      <workItem from="1650287256633" duration="11730000" />
     </task>
     <task id="LOCAL-00001" summary="Update Product page">
       <created>1648560053404</created>
