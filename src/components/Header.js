@@ -9,8 +9,8 @@ import {
     Nav,
     Navbar,
 } from "react-bootstrap";
-import "./styles.css";
-import "/FrontEnd_IP/IP-FrontEnd/src/stylesheets/App.css"
+import "../stylesheets/header.css";
+import "../stylesheets/App.css"
 import { Link, useLocation } from "react-router-dom";
 import { CartState } from "../context/Context";
 const Header = () => {

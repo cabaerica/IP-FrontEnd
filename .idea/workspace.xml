@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da5b183-3e04-495f-aa4a-076300998682" name="Changes" comment="Update Product page">
+      <change afterPath="$PROJECT_DIR$/public/Data/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProductPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stylesheets/filter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stylesheets/navbar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/unitTests/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cart.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/unitTests/Cart.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/unitTests/Product.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Css/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ShoppingCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShoppingCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingleProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/Context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/Context.js" afterDir="false" />
     </list>
     <list id="c4fc2501-ba21-4e71-b96f-dbfc49f46748" name="Changes by Tudor" comment="" />
@@ -20,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -52,7 +72,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ip" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../weather-app/src/App.js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -63,10 +83,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\anton\Desktop\Proiect_IP\IP-FrontEnd\public\Data" />
-      <recent name="C:\Users\anton\Desktop\Proiect_IP\IP-FrontEnd\public" />
-      <recent name="G:\FrontEnd_IP\IP-FrontEnd\public\Data" />
-      <recent name="G:\FrontEnd_IP\IP-FrontEnd\public" />
+      <recent name="C:\Users\bahna\Documents\GitHub\IP-FrontEnd\public\Data" />
+      <recent name="C:\Users\bahna\Documents\GitHub\IP-FrontEnd\src\unitTests" />
+      <recent name="C:\Users\bahna\Documents\GitHub\IP-FrontEnd\src\unitTests2" />
+      <recent name="C:\Users\bahna\Documents\GitHub\IP-FrontEnd\src\stylesheets" />
+      <recent name="C:\Users\bahna\Documents\GitHub\IP-FrontEnd\src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -84,6 +105,7 @@
       <workItem from="1648634623204" duration="112000" />
       <workItem from="1648804907481" duration="22000" />
       <workItem from="1649084982975" duration="10636000" />
+      <workItem from="1650358149925" duration="14556000" />
     </task>
     <task id="LOCAL-00001" summary="Update Product page">
       <created>1648560053404</created>

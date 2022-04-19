@@ -6,22 +6,24 @@ import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import "../stylesheets/navbar.css"
+
 const NavBar = () => {
   return (
     <Navbar bg="dark" expand="lg">
     <Container fluid>
-      <Navbar.Brand href="#" style = {{color: 'white'}}>BuyIT</Navbar.Brand>
+      <Navbar.Brand href="firstPage" id = {"title__name" }>BuyIT</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
-      <Navbar.Collapse id="navbarScroll">
+      <Navbar.Collapse id="navbarScroll" className={"btn__navbar"}>
         <Nav
           className="me-auto my-2 my-lg-0"
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
-          <Nav.Link href="product" style = {{color: 'white'}}>Products</Nav.Link>
-          <Nav.Link href="cart" style = {{color: 'white'}}>Cart</Nav.Link>
-          <Nav.Link href="wishlist" style = {{color:'white'}}>Wishlist</Nav.Link>
-          <Nav.Link href="user" style = {{color:'white'}}>User</Nav.Link>
+
+          <Nav.Link href="products">Products</Nav.Link>
+          <Nav.Link href="cart">Cart</Nav.Link>
+          <Nav.Link href="user">Account</Nav.Link>
         </Nav>
         <Form className="d-flex">
           <FormControl

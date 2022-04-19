@@ -1,7 +1,7 @@
 import { CartState } from "../context/Context";
 import Filters from "./Filters";
 import SingleProduct from "./SingleProduct";
-import "./styles.css";
+import "../stylesheets/header.css";
 
 const Home = () => {
     const {
