@@ -100,3 +100,11 @@
         width: 100%;
     }
 }
+
+
+.product__title {
+    height: 50px;
+    color: black!important;
+    font-size: 20px!important;
+    margin: 10px;
+}

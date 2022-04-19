@@ -1,0 +1,14 @@
+.stock-container {
+    display: flex;
+    width: 78%;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 771px) {
+    .stock-container {
+        width: 58%;
+        padding: 0;
+    }
+}

@@ -1,9 +1,4 @@
-import React from 'react'
-import SingleProduct from "./SingleProduct";
-import Filters from "./Filters";
-import "../stylesheets/ShoppingCart.css"
-
-const data = {
+{
   "data": [
     {
       "id": 9,
@@ -726,24 +721,4 @@ const data = {
       ]
     }
   ]
-};
-
-const ShoppingCart = () => {
-  console.log(data)
-
-  return (
-  <div>
-    <Filters/>
-    <div className="stock-container">
-      {data.data.map((product) => {
-        //console.log(product) //image, name, ratings, price
-        return (//files[0].base64
-           <SingleProduct product = {product}/>
-        );
-      })}
-    </div>
-  </div>
-);
 }
-
-export default ShoppingCart

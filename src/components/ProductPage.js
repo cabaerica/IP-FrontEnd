@@ -1,7 +1,7 @@
 import React from 'react'
 
 const User = (userData) => {
-    //pagina unui user
+    //pagina unui produs
     console.log('------------');
     console.log(userData);
     return (
