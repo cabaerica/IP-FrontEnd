@@ -5,8 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da5b183-3e04-495f-aa4a-076300998682" name="Changes" comment="Update Product page">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/Context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/Context.js" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mocks/fileMock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/unitTests/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/unitTests/Product.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/unitTests/ShoppingCart.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05-Apr-22_1_05_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05-Apr-22_1_05_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cart.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FirstPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FirstPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ShoppingCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShoppingCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enzyme.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unitTests/User.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/unitTests/User.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/webpack.config.js" beforeDir="false" />
+>>>>>>> Stashed changes
     </list>
     <list id="c4fc2501-ba21-4e71-b96f-dbfc49f46748" name="Changes by Tudor" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,13 +80,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ip" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\Facultate\IP Lab\IP-FrontEnd\node_modules\prettier" />
+    <property name="ts.external.directory.path" value="D:\Facultate\IP Lab\IP-FrontEnd\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -68,6 +98,16 @@
       <recent name="G:\FrontEnd_IP\IP-FrontEnd\public\Data" />
       <recent name="G:\FrontEnd_IP\IP-FrontEnd\public" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/App.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.App.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -84,6 +124,10 @@
       <workItem from="1648634623204" duration="112000" />
       <workItem from="1648804907481" duration="22000" />
       <workItem from="1649084982975" duration="10636000" />
+      <workItem from="1649359375544" duration="6982000" />
+      <workItem from="1649366427916" duration="3323000" />
+      <workItem from="1650117451003" duration="510000" />
+      <workItem from="1650357582753" duration="405000" />
     </task>
     <task id="LOCAL-00001" summary="Update Product page">
       <created>1648560053404</created>

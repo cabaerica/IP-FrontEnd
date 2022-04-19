@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductCard from "./ProductCard";
+import ProductCard from "./ProductCard.js";
 const ShoppingCart = () => {
     //produsele din cos
     //Folosim tot card urile

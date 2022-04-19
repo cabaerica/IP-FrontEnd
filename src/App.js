@@ -19,7 +19,7 @@ function App() {
     const [productData, setProductData] = useState([{}]);
     const [cartData, setCartData] = useState([]);
     const [wishlistData, setWishlistData] = useState([]);
-    //folosim parametri pentru a nu avea 4 functii identice pentru fiecare data
+
     const getData = (URL, setData) => {
         fetch(URL
             , {
@@ -89,7 +89,6 @@ function App() {
         fetch(URL, {method: 'DELETE'})
             .then(() => console.log("Deleted object!"));
     }
-    //-->Cosmin incepe codul
 
     useEffect(() => {
         getData(URL_PRODUCT, setProductData)
@@ -128,8 +127,6 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/cart" element={<Cart/>}/>
-
-
             </Routes>
         </BrowserRouter>
         );
