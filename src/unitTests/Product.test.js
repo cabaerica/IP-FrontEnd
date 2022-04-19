@@ -1,14 +1,13 @@
 import React from 'react';
-import Product from '../components/Product';
+import SingleProduct from '../components/SingleProduct';
 import Enzyme, {shallow, configure} from "enzyme";
-import Adapter from 'enzyme-adapter-react-16';
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 Enzyme.configure({ adapter: new Adapter() });
 
 describe("should render product component", () => {
     it('should render ..', () => {
-        const wrapper = shallow(<Product/>)
+        const wrapper = shallow(<SingleProduct/>)
         console.log(wrapper)
     })
-
 })
