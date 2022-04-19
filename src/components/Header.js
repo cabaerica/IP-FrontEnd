@@ -10,7 +10,7 @@ import {
     Navbar,
 } from "react-bootstrap";
 import "./styles.css";
-import "/FrontEnd_IP/IP-FrontEnd/src/stylesheets/App.css"
+import "/FrontEnd_IP/IP-FrontEnd/src/stylesheets/App.css";
 import { Link, useLocation } from "react-router-dom";
 import { CartState } from "../context/Context";
 const Header = () => {
@@ -62,7 +62,7 @@ const Header = () => {
                       />
                       <div className="cartItemDetail">
                         <span>{prod.name}</span>
-                        <span>₹ {prod.price.split(".")[0]}</span>
+                        <span>RON {prod.price.split(".")[0]}</span>
                       </div>
                       <AiFillDelete
                           fontSize="20px"
