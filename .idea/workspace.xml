@@ -4,29 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4da5b183-3e04-495f-aa4a-076300998682" name="Changes" comment="Update Product page">
-      <change afterPath="$PROJECT_DIR$/public/Data/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ProductPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/filter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/navbar.css" afterDir="false" />
+    <list default="true" id="4da5b183-3e04-495f-aa4a-076300998682" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/stylesheets/ShoppingCart.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/unitTests/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cart.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/unitTests/Cart.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/unitTests/Product.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User.test.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Css/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ShoppingCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShoppingCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingleProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/Context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/Context.js" afterDir="false" />
     </list>
     <list id="c4fc2501-ba21-4e71-b96f-dbfc49f46748" name="Changes by Tudor" comment="" />
     <option name="SHOW_DIALOG" value="false" />

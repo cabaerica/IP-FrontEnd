@@ -1,7 +1,7 @@
 import React from 'react'
 import SingleProduct from "./SingleProduct";
 import Filters from "./Filters";
-
+import "../stylesheets/ShoppingCart.css"
 
 const data = {
   "data": [
