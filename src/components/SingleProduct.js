@@ -1,7 +1,7 @@
 import { Card, Button } from "react-bootstrap";
 import { CartState } from "../context/Context";
 import Rating from "./Rating";
-import "../stylesheets/header.css";
+import "./header.css";
 
 const SingleProduct = (product) => {
     const {

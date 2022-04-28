@@ -1,4 +1,4 @@
-.login {
+.register {
     font-family: sans-serif;
     display: flex;
     align-items: center;
@@ -35,11 +35,12 @@ input[type="submit"]:hover {
     justify-content: center;
 }
 
-.login-form {
+.register-form {
     background-color: white;
     padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 .error {
     color: red;
@@ -51,7 +52,7 @@ input[type="submit"]:hover {
     margin-bottom: 20px;
 }
 
-.input-container {
+.form__input, .form__label {
     display: flex;
     flex-direction: column;
     gap: 8px;
