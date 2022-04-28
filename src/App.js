@@ -9,6 +9,7 @@ import Cart from "./components/Cart";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import User from "./components/User"
 
 //const URL_CART = 'http://localhost:8002/cart';
 //const URL_PRODUCT = 'http://localhost:8001/products';
@@ -132,6 +133,7 @@ function App() {
                 <Route path="/cart" element={<Cart/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/register" element={<Register/>}/>
+                <Route path="/user" element={<User/>}/>
             </Routes>
         </BrowserRouter>
         );
