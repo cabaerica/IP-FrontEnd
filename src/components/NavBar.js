@@ -12,7 +12,9 @@ const NavBar = () => {
   return (
     <Navbar bg="dark" expand="lg">
     <Container fluid>
-      <Navbar.Brand href="firstPage" id = {"title__name" }>BuyIT</Navbar.Brand>
+      <Navbar.Brand href="firstPage">
+        <img src="/LOGO/BuyIT-logo2.png"/>
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll" className={"btn__navbar"}>
         <Nav

@@ -1,50 +1,53 @@
 import { Card, Button } from "react-bootstrap";
 import { CartState } from "../context/Context";
 import Rating from "./Rating";
-import "./header.css";
 
-const SingleProduct = (product) => {
+const SingleProduct = ({ prod }) => {
     const {
         state: { cart },
         dispatch,
     } = CartState();
-    console.log(product)
 
-
-    function addToCart() {
-        console.log("added to the cart")
-    }
-
-    function removeFromCart() {
-        console.log("removed from the cart")
-    }
-    //id = {product.id} name = {product.name} rating = {product.rating} image = {product.files[0].base64} price = {product.price}product.files[0]
     return (
         <div className="products">
-
             <Card>
-                <Card.Img variant="top" src={product.product.files[0].base64}  />
+                <Card.Img variant="top" src={prod.image} alt={prod.name} />
                 <Card.Body>
-                    <Card.Title className = "product__title">{product.product.name}</Card.Title>
+                    <Card.Title>{prod.name}</Card.Title>
                     <Card.Subtitle style={{ paddingBottom: 10 }}>
-                        <span>{product.product.price} RON</span>
-
-                        <Rating rating={product.product.rating} />
+                        <span>RON {prod.price.split(".")[0]}</span>
+                        {prod.fastDelivery ? (
+                            <div>Fast Delivery</div>
+                        ) : (
+                            <div>4 days delivery</div>
+                        )}
+                        <Rating rating={prod.ratings} />
                     </Card.Subtitle>
-                    <Button
-                            variant="success"
-                            onClick={() => addToCart()}
-                    >
-                            Add to Cart
-                    </Button>
-
-                    <Button
-                        variant="danger"
-                        onClick={() => removeFromCart()}
-                    >
-                        Remove from Cart
-                    </Button>
-
+                    {cart.some((p) => p.id === prod.id) ? (
+                        <Button
+                            variant="danger"
+                            onClick={() =>
+                                dispatch({
+                                    type: "REMOVE_FROM_CART",
+                                    payload: prod,
+                                })
+                            }
+                        >
+                            Remove from Cart
+                        </Button>
+                    ) : (
+                        <Button
+                            onClick={() =>
+                                dispatch({
+                                    type: "ADD_TO_CART",
+                                    payload: prod,
+                                })
+                            }
+                            disabled={!prod.inStock}
+                        >
+                            {!prod.inStock ? "Out of Stock" : "Add to Cart"}
+                        </Button>
+                    )}
                 </Card.Body>
             </Card>
         </div>

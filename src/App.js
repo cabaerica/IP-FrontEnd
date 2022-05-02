@@ -1,4 +1,4 @@
-
+import "./stylesheets/App.css";
 import {
     BrowserRouter,
     Route,
@@ -9,7 +9,7 @@ import Cart from "./components/Cart";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import User from "./components/User"
+import Footer from "./components/Footer";
 
 //const URL_CART = 'http://localhost:8002/cart';
 //const URL_PRODUCT = 'http://localhost:8001/products';
@@ -127,14 +127,15 @@ function App() {
 
     return(
         <BrowserRouter>
+
             <Header/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/cart" element={<Cart/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/register" element={<Register/>}/>
-                <Route path="/user" element={<User/>}/>
             </Routes>
+            <Footer/>
         </BrowserRouter>
         );
 }

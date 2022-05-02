@@ -1,121 +1,90 @@
-import React, {useState} from 'react';
-import './Register.css'
+import React, {useState,setState} from 'react';
+import './register.css';
+import {database} from './firebase'
+import {ref,push,child,update} from "firebase/database";
+function RegistrationForm() {
 
-const RegistrationForm = () =>  {
+    const [username, setUserName] = useState(null);
+    const [firstName, setFirstName] = useState(null);
+    const [lastName, setLastName] = useState(null);
+    const [email, setEmail] = useState(null);
+    const [password,setPassword] = useState(null);
+    const [confirmPassword,setConfirmPassword] = useState(null);
 
-    const [errorMessages, setErrorMessages] = useState({});
-    const [isSubmitted, setIsSubmitted] = useState(false);
+    const handleInputChange = (e) => {
+        const {id , value} = e.target;
 
-
-    const database = [
+        if(id ==="username")
         {
-            username: "user1",
-            email : "user1@yahoo.com"
-        },
-        {
-            username: "user2",
-            email: "user2@yahoo.com"
+            setUserName(value);
         }
-    ];
-
-    const errors = {
-        nameExists: "invalid username",
-        pass: "password must be the same",
-        mail : "email already used"
-    };
-
-    const handleSubmit = (event) => {
-        //Prevent page reload
-        event.preventDefault();
-
-
-        console.log("---------");
-        console.log(document.forms[0]);
-
-        console.log("---------");
-        var {username,email,password,passwordVerif} = document.forms[0];
-
-        console.log("---------");
-        console.log(username);
-        console.log(password);
-        console.log(passwordVerif);
-        console.log("---------");
-        // Find user login info
-        const userData = database.find((user) => user.username === username.value || user.email === email.value);
-
-        console.log("---------");
-        console.log(userData);
-        console.log("---------");
-        // Compare user info
-        if (userData) {
-            if (userData.username === username.value) {
-                setErrorMessages({name: "nameExists", message: errors.nameExists});
-            }
-            else
-            {
-                setErrorMessages({name: "mail", message: errors.mail});
-            }
-        } else {
-            if (password.value === passwordVerif.value) {
-                setIsSubmitted(true);
-            }
-            else {
-                setErrorMessages({name: "pass", message: errors.pass});
-            }
+        if(id === "firstName"){
+            setFirstName(value);
         }
-    };
+        if(id === "lastName"){
+            setLastName(value);
+        }
+        if(id === "email"){
+            setEmail(value);
+        }
+        if(id === "password"){
+            setPassword(value);
+        }
+        if(id === "confirmPassword"){
+            setConfirmPassword(value);
+        }
+    }
 
-    const renderErrorMessage = (name) =>
-        name === errorMessages.name && (
-            <div className="error">{errorMessages.message}</div>
-        );
-
-    const renderForm = (
-        <div className="form">
-            <form onSubmit={handleSubmit} name={"register"}>
-                <div className="username">
-                    <label className="form__label" htmlFor="userName">Username </label>
-                    <input className="form__input" type="text" id="userName" placeholder="UserName" name={"username"} required/>
-                    {renderErrorMessage("nameExists")}
-                </div>
-                <div className="firstname">
-                    <label className="form__label" htmlFor="firstName">First Name </label>
-                    <input className="form__input" type="text" id="firstName" placeholder="First Name" name={"firstname"} required/>
-                </div>
-                <div className="lastname">
-                    <label className="form__label" htmlFor="lastName">Last Name </label>
-                    <input type="text" id="lastName" className="form__input" placeholder="LastName" name={"lastname"} required/>
-                </div>
-                <div className="email">
-                    <label className="form__label" htmlFor="email">Email </label>
-                    <input type="email" id="email" className="form__input" placeholder="Email" name={"email"} required/>
-                    {renderErrorMessage("mail")}
-                </div>
-                <div className="password">
-                    <label className="form__label" htmlFor="password">Password </label>
-                    <input className="form__input" type="password" id="password" placeholder="Password" name={"password"}required/>
-                </div>
-                <div className="confirm-password">
-                    <label className="form__label" htmlFor="confirmPassword">Confirm Password </label>
-                    <input className="form__input" type="password" id="confirmPassword" placeholder="Confirm Password" name={"passwordVerif"} required/>
-                    {renderErrorMessage("pass")}
-                </div>
-            <div className="button-container">
-                <input type="submit"></input>
-            </div>
-            </form>
-        </div>
-    );
+    const handleSubmit  = () => {
+        //console.log(firstName,lastName,email,password,confirmPassword);
+        let obj = {
+            username : username,
+            firstName : firstName,
+            lastName:lastName,
+            email:email,
+            password:password,
+            confirmPassword:confirmPassword,
+        }
+        const newPostKey = push(child(ref(database), 'posts')).key;
+        const updates = {};
+        updates['/' + newPostKey] = obj
+        return update(ref(database), updates);
+    }
 
     return(
-        <div className="register">
-            <div className="register-form">
-                <div className="title">Register</div>
-                {isSubmitted ? <div>New user created successfully </div> : renderForm}
+        <div className="form">
+            <div className="form-body">
+                <div className="username">
+                    <label className="form__label" for="username">Username</label>
+                    <input className="form__input" type="text" value={username} onChange = {(e) => handleInputChange(e)} id="username" placeholder="Username"/>
+                </div>
+                <div className="firstname">
+                    <label className="form__label" for="firstName">First Name </label>
+                    <input className="form__input" type="text" value={firstName} onChange = {(e) => handleInputChange(e)} id="firstName" placeholder="First Name"/>
+                </div>
+                <div className="lastname">
+                    <label className="form__label" for="lastName">Last Name </label>
+                    <input  type="text" name="" id="lastName" value={lastName}  className="form__input" onChange = {(e) => handleInputChange(e)} placeholder="LastName"/>
+                </div>
+                <div className="email">
+                    <label className="form__label" for="email">Email </label>
+                    <input  type="email" id="email" className="form__input" value={email} onChange = {(e) => handleInputChange(e)} placeholder="Email"/>
+                </div>
+                <div className="password">
+                    <label className="form__label" for="password">Password </label>
+                    <input className="form__input" type="password"  id="password" value={password} onChange = {(e) => handleInputChange(e)} placeholder="Password"/>
+                </div>
+                <div className="confirm-password">
+                    <label className="form__label" for="confirmPassword">Confirm Password </label>
+                    <input className="form__input" type="password" id="confirmPassword" value={confirmPassword} onChange = {(e) => handleInputChange(e)} placeholder="Confirm Password"/>
+                </div>
+            </div>
+            <div class="footer">
+                <button onClick={()=>handleSubmit()} type="submit" class="btn">Register</button>
             </div>
         </div>
 
     )
 }
 
-export default RegistrationForm;
+export default RegistrationForm
