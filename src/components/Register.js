@@ -54,6 +54,9 @@ function RegistrationForm() {
     return(
         <div className="form">
             <div className="form-body">
+                <div className="title">
+                    <p>Register</p>
+                </div>
                 <div className="username">
                     <label className="form__label" for="username">Username</label>
                     <input className="form__input" type="text" value={username} onChange = {(e) => handleInputChange(e)} id="username" placeholder="Username"/>
@@ -79,8 +82,8 @@ function RegistrationForm() {
                     <input className="form__input" type="password" id="confirmPassword" value={confirmPassword} onChange = {(e) => handleInputChange(e)} placeholder="Confirm Password"/>
                 </div>
             </div>
-            <div class="footer">
-                <button onClick={()=>handleSubmit()} type="submit" class="btn">Register</button>
+            <div className="register">
+                <button onClick={()=>handleSubmit()} type="submit" class="btn btn-outline-success">Register</button>
             </div>
         </div>
 

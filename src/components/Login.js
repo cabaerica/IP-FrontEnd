@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
-import "../stylesheets//Login.css";
-
+import '../stylesheets/Login.css';
 const Login = () =>  {
     // React States
     const [errorMessages, setErrorMessages] = useState({});
@@ -56,20 +55,20 @@ const Login = () =>  {
 
     // JSX code for login form
     const renderForm = (
-        <div className="form">
+        <div className="theform">
             <form onSubmit={handleSubmit}>
-                <div className="input-container">
-                    <label>Username </label>
-                    <input type="text" name="uname" required />
+                <div className="username">
+                    <label className="form__label">Username </label>
+                    <input className="form__input" type="text" name="uname" placeholder="Username" required />
                     {renderErrorMessage("uname")}
                 </div>
-                <div className="input-container">
-                    <label>Password </label>
-                    <input type="password" name="pass" required />
+                <div className="password">
+                    <label className="form__label">Password </label>
+                    <input className="form__input" type="password" name="pass" required placeholder="Password" />
                     {renderErrorMessage("pass")}
                 </div>
-                <div className="button-container">
-                    <input type="submit" />
+                <div className="register">
+                    <input type="submit" class="btn btn-outline-success" />
                 </div>
             </form>
         </div>

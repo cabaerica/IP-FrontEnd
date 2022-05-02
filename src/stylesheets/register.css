@@ -30,6 +30,15 @@ body{
     width: 60%;
 }
 
-.footer{
+.register{
     text-align: center;
 }
+.register .btn {
+    background-color: #343A40!important;
+    color: white!important;
+}
+.register .btn:hover{
+    background-color: #198754!important;
+    color: white!important;
+}
+
