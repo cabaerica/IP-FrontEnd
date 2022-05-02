@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
-import "./Login.css";
+import "../stylesheets//Login.css";
 
 const Login = () =>  {
     // React States

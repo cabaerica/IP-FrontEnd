@@ -1,5 +1,5 @@
-import React, {useState,setState} from 'react';
-import './register.css';
+import React, {useState} from 'react';
+import '../stylesheets/register.css';
 import {database} from './firebase'
 import {ref,push,child,update} from "firebase/database";
 function RegistrationForm() {

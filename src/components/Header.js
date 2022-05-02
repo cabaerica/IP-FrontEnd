@@ -9,11 +9,11 @@ import {
     Nav,
     Navbar,
 } from "react-bootstrap";
-import "/FrontEnd_IP/IP-FrontEnd/src/stylesheets/header.css";
-import "/FrontEnd_IP/IP-FrontEnd/src/stylesheets/App.css";
+import "../stylesheets/header.css";
+import "../stylesheets/App.css";
 import { Link, useLocation } from "react-router-dom";
 import { CartState } from "../context/Context";
-import "/FrontEnd_IP/IP-FrontEnd/src/LOGO/BuyIT-logo2.png"
+import "../LOGO/rsz_1rsz_1rsz_1buyit-logo2.png"
 
 const Header = () => {
     const {
@@ -26,13 +26,7 @@ const Header = () => {
         <Navbar bg="dark" variant="dark" style={{ height: 80 }}>
             <Container>
                 <Navbar.Brand>
-                    <img
-                        alt=""
-                        src="../LOGO/BuyIT-logo22222222222.png"
-                        width="100"
-                        height="100"
-                        className="d-inline-block align-top"
-                    />
+                    <img src={require('../LOGO/rsz_1rsz_1rsz_1buyit-logo2.png')} alt="Not found" width="150" height="150"/>
                 </Navbar.Brand>
                 {useLocation().pathname.split("/")[1] !== "cart" && (
                     <Navbar.Text className="search">
