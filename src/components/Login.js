@@ -68,7 +68,7 @@ const Login = () =>  {
                     {renderErrorMessage("pass")}
                 </div>
                 <div className="register">
-                    <input type="submit" class="btn btn-outline-success" />
+                    <input type="submit" className="btn btn-outline-success" />
                 </div>
             </form>
         </div>
