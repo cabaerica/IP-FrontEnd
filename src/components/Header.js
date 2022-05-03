@@ -9,13 +9,11 @@ import {
     Nav,
     Navbar,
 } from "react-bootstrap";
-import "/FrontEnd_IP/IP-FrontEnd/src/stylesheets/header.css";
-import "/FrontEnd_IP/IP-FrontEnd/src/stylesheets/App.css";
+import "../stylesheets/header.css";
+import "../stylesheets/App.css";
 import { Link, useLocation } from "react-router-dom";
 import { CartState } from "../context/Context";
-import "/FrontEnd_IP/IP-FrontEnd/src/LOGO/rsz_1rsz_1rsz_1buyit-logo2.png";
-
-
+import "../LOGO/rsz_1rsz_1rsz_1buyit-logo2.png"
 
 const Header = () => {
     const {

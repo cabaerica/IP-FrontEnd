@@ -1,0 +1,21 @@
+.login{
+    background-color: white;
+    border-radius: 5px;
+    width: 550px;
+    margin: 20px auto;
+    padding: 20px;
+    /* height: 600px; */
+}
+.login-form{
+    text-align: left;
+    padding: 20px 10px;
+ }
+
+form > *{
+    padding: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}

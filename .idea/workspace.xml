@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4da5b183-3e04-495f-aa4a-076300998682" name="Changes" comment="Project Again">
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/singleproduct.css" afterDir="false" />
+    <list default="true" id="4da5b183-3e04-495f-aa4a-076300998682" name="Changes" comment="Product List + CART">
+      <change afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stylesheets/footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingleProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/filter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/filter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/navbar.css" afterDir="false" />
     </list>
     <list id="c4fc2501-ba21-4e71-b96f-dbfc49f46748" name="Changes by Tudor" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,14 +26,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -63,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ip" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -74,11 +69,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\FrontEnd_IP\IP-FrontEnd\src" />
-      <recent name="G:\FrontEnd_IP\IP-FrontEnd\src\stylesheets" />
+      <recent name="C:\Users\anton\Desktop\Proiect_IP\IP-FrontEnd\src\components" />
       <recent name="C:\Users\anton\Desktop\Proiect_IP\IP-FrontEnd\public\Data" />
       <recent name="C:\Users\anton\Desktop\Proiect_IP\IP-FrontEnd\public" />
       <recent name="G:\FrontEnd_IP\IP-FrontEnd\public\Data" />
+      <recent name="G:\FrontEnd_IP\IP-FrontEnd\public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -97,13 +92,8 @@
       <workItem from="1648804907481" duration="22000" />
       <workItem from="1649084982975" duration="10636000" />
       <workItem from="1650357471366" duration="2778000" />
-      <workItem from="1650373152449" duration="5046000" />
-      <workItem from="1651136831023" duration="491000" />
-      <workItem from="1651138020762" duration="8188000" />
-      <workItem from="1651229934304" duration="400000" />
-      <workItem from="1651513842066" duration="10126000" />
-      <workItem from="1651566078984" duration="14279000" />
-      <workItem from="1651587403291" duration="3295000" />
+      <workItem from="1650373152449" duration="3038000" />
+      <workItem from="1651515462898" duration="27802000" />
     </task>
     <task id="LOCAL-00001" summary="Update Product page">
       <created>1648560053404</created>
@@ -126,28 +116,7 @@
       <option name="project" value="LOCAL" />
       <updated>1650305843094</updated>
     </task>
-    <task id="LOCAL-00004" summary="Product List + CART">
-      <created>1650380184514</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1650380184514</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Project Again">
-      <created>1651515749703</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1651515749703</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Project Again">
-      <created>1651520959894</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1651520959894</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +137,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Update Product page" />
     <MESSAGE value="Product List + CART" />
-    <MESSAGE value="Project Again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product List + CART" />
   </component>
 </project>
