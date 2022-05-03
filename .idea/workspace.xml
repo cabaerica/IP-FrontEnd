@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da5b183-3e04-495f-aa4a-076300998682" name="Changes" comment="Product List + CART">
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/User.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stylesheets/footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingleProduct.js" afterDir="false" />
     </list>
     <list id="c4fc2501-ba21-4e71-b96f-dbfc49f46748" name="Changes by Tudor" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ip" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -89,6 +93,7 @@
       <workItem from="1649084982975" duration="10636000" />
       <workItem from="1650357471366" duration="2778000" />
       <workItem from="1650373152449" duration="3038000" />
+      <workItem from="1651515462898" duration="27802000" />
     </task>
     <task id="LOCAL-00001" summary="Update Product page">
       <created>1648560053404</created>

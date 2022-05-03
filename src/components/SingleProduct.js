@@ -23,13 +23,13 @@ const SingleProduct = (product) => {
         <div className="products">
 
             <Card>
-                <Card.Img variant="top" src={product.product.files[0].base64}  />
+                <Card.Img variant="top" src={product.image}  />
                 <Card.Body>
-                    <Card.Title className = "product__title">{product.product.name}</Card.Title>
+                    <Card.Title className = "product__title">{product.name}</Card.Title>
                     <Card.Subtitle style={{ paddingBottom: 10 }}>
-                        <span>{product.product.price} RON</span>
+                        <span>{product.price} RON</span>
 
-                        <Rating rating={product.product.rating} />
+                        <Rating rating={product.rating} />
                     </Card.Subtitle>
                     <Button
                             variant="success"
