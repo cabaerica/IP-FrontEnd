@@ -13,7 +13,9 @@ import "/FrontEnd_IP/IP-FrontEnd/src/stylesheets/header.css";
 import "/FrontEnd_IP/IP-FrontEnd/src/stylesheets/App.css";
 import { Link, useLocation } from "react-router-dom";
 import { CartState } from "../context/Context";
-import "/FrontEnd_IP/IP-FrontEnd/src/LOGO/BuyIT-logo2.png"
+import "/FrontEnd_IP/IP-FrontEnd/src/LOGO/rsz_1rsz_1rsz_1buyit-logo2.png";
+
+
 
 const Header = () => {
     const {
@@ -23,17 +25,21 @@ const Header = () => {
     } = CartState();
 
     return (
-        <Navbar bg="dark" variant="dark" style={{ height: 80 }}>
+        <Navbar className="navbar-color" variant="dark" style={{ height: 80 }} >
             <Container>
                 <Navbar.Brand>
-                    <img
-                        alt=""
-                        src="../LOGO/BuyIT-logo22222222222.png"
-                        width="100"
-                        height="100"
-                        className="d-inline-block align-top"
-                    />
+                   <img className="img" src={require('../LOGO/rsz_1rsz_1rsz_1buyit-logo2.png')} alt="Not found" width="150" height="150"/>
                 </Navbar.Brand>
+                <Nav
+                    className="mybtn me-auto my-2 my-lg-0"
+                    style={{ maxHeight: '100px' }}
+                    navbarScrollz
+                >
+                    <Nav.Link className="productsbtn" href="products">Products</Nav.Link>
+                    <Nav.Link className="cartbtn" href="cart">Cart</Nav.Link>
+                    <Nav.Link className="accountbtn" href="user">Account</Nav.Link>
+                    <Nav.Link className="favouritesbtn" href="favourites">Favourites</Nav.Link>
+                </Nav>
                 {useLocation().pathname.split("/")[1] !== "cart" && (
                     <Navbar.Text className="search">
                         <FormControl
@@ -52,13 +58,13 @@ const Header = () => {
                     </Navbar.Text>
                 )}
                 <Nav>
-                    <Dropdown alignRight>
-                        <Dropdown.Toggle variant="success">
-                            <FaShoppingCart color="white" fontSize="25px" />
-                            <Badge>{cart.length}</Badge>
+                    <Dropdown className="dropdown">
+                        <Dropdown.Toggle className="dropdownsucc" style={{backgroundColor: "#4A1C49" , borderColor:"#4A1C49"}}>
+                            <FaShoppingCart className="facart" color="#D6BBC0" fontSize="25px"/>
+                            <Badge className="badge1">{cart.length}</Badge>
                         </Dropdown.Toggle>
 
-                        <Dropdown.Menu style={{ minWidth: 370 }}>
+                        <Dropdown.Menu className="dropdownmenu" style={{ minWidth: 370 }}>
                             {cart.length > 0 ? (
                                 <>
                                     {cart.map((prod) => (
@@ -85,13 +91,13 @@ const Header = () => {
                     </span>
                                     ))}
                                     <Link to="/cart">
-                                        <Button style={{ width: "95%", margin: "0 10px" }}>
+                                        <Button className="btn-cart" style={{ width: "95%", margin: "0 10px",color:"#D6BBC0"}}>
                                             Go To Cart
                                         </Button>
                                     </Link>
                                 </>
                             ) : (
-                                <span style={{ padding: 10 }}>Cart is Empty!</span>
+                                <span style={{ padding: 10, fontWeight: "bold" }}>Cart is Empty!</span>
                             )}
                         </Dropdown.Menu>
                     </Dropdown>

@@ -3,14 +3,16 @@
     text-align: center;
     font-size: 30px;
     margin: 10px 0;
+
 }
+
+
 
 .cartitem {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 20px;
-    margin-bottom: 20px;
+    margin: 0 20px 20px;
 }
 
 .cartItemImg {
@@ -22,6 +24,8 @@
 
 .cartItemDetail {
     display: flex;
+    font-weight: bold;
+    font-family: "Candara", sans-serif !important;
     flex: 1;
     padding: 0 20px;
     flex-direction: column;
@@ -34,14 +38,16 @@
 }
 
 .filters {
-    background-color: #343a40;
+    background-color: #612e53;
+    font-family: "Candara", sans-serif;
+    font-weight: bold;
     color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
     width: 20%;
     margin: 10px;
-    height: 86vh;
+    height: 54vh;
 }
 
 .filters > span {
@@ -108,3 +114,90 @@
     font-size: 20px!important;
     margin: 10px;
 }
+
+.search{
+    margin-right: 1rem;
+}
+
+.productsbtn{
+    font-family: "Candara", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #D6BBC0 !important;
+
+}
+
+.cartbtn{
+    font-family: "Candara", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #D6BBC0 !important;
+}
+
+.accountbtn{
+    font-family: "Candara", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #D6BBC0 !important;
+
+}
+
+.favouritesbtn{
+    font-family: "Candara", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #D6BBC0 !important;
+}
+
+.productsbtn:hover{
+    text-decoration: #BC69AA underline !important;
+}
+
+.cartbtn:hover{
+    text-decoration:#BC69AA underline !important;
+}
+
+.accountbtn:hover{
+    text-decoration:#BC69AA underline !important;
+}
+
+.favouritesbtn:hover{
+    text-decoration: #BC69AA underline !important;
+}
+
+.img{
+    margin-left: -30% !important;
+    width:200px !important;
+    height: 200px !important;
+
+}
+
+.home{
+    background-image: linear-gradient(#4A1C49,#D6BBC0);
+}
+
+.dropdownmenu{
+    margin-left: -220% !important;
+    background-color: #D6BBC0 !important;
+    font-family: "Candara", sans-serif;
+}
+
+.m-auto{
+    background-color: #D6BBC0 !important;
+    font-family: "Candara", sans-serif;
+    font-weight: bold !important;
+}
+.btn-cart{
+    background-color: #4A1C49 !important;
+    border: #4A1C49!important;
+}
+
+.dropdown{
+    color: #4A1C49 !important;
+}
+
+.badge1{
+    color: #D6BBC0 !important;
+    --bs-bg-opacity: 0 !important;
+}
+

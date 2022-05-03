@@ -5,22 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4da5b183-3e04-495f-aa4a-076300998682" name="Changes" comment="Project Again">
-      <change afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/firebase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stylesheets/singleproduct.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingleProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/filter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/filter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stylesheets/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/navbar.css" afterDir="false" />
     </list>
     <list id="c4fc2501-ba21-4e71-b96f-dbfc49f46748" name="Changes by Tudor" comment="" />
@@ -106,7 +101,9 @@
       <workItem from="1651136831023" duration="491000" />
       <workItem from="1651138020762" duration="8188000" />
       <workItem from="1651229934304" duration="400000" />
-      <workItem from="1651513842066" duration="6676000" />
+      <workItem from="1651513842066" duration="10126000" />
+      <workItem from="1651566078984" duration="14279000" />
+      <workItem from="1651587403291" duration="3295000" />
     </task>
     <task id="LOCAL-00001" summary="Update Product page">
       <created>1648560053404</created>
@@ -143,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651515749703</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Project Again">
+      <created>1651520959894</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651520959894</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,6 +1,7 @@
 import { Card, Button } from "react-bootstrap";
 import { CartState } from "../context/Context";
 import Rating from "./Rating";
+import "/FrontEnd_IP/IP-FrontEnd/src/stylesheets/singleproduct.css";
 
 const SingleProduct = ({ prod }) => {
     const {
@@ -10,18 +11,18 @@ const SingleProduct = ({ prod }) => {
 
     return (
         <div className="products">
-            <Card>
+            <Card className="card1" style={{backgroundColor:"#D0A3BF" ,borderStyle:"solid",borderWidth:"5px",borderColor:"#612e53",fontFamily:"Candara", fontWeight:"bold"}}>
                 <Card.Img variant="top" src={prod.image} alt={prod.name} />
-                <Card.Body>
-                    <Card.Title>{prod.name}</Card.Title>
+                <Card.Body className="card-body">
+                    <Card.Title className="cardtitle">{prod.name}</Card.Title>
                     <Card.Subtitle style={{ paddingBottom: 10 }}>
-                        <span>RON {prod.price.split(".")[0]}</span>
+                        <span style={{fontStyle:"Candara", fontWeight:"bold"}}>RON {prod.price.split(".")[0]}</span>
                         {prod.fastDelivery ? (
-                            <div>Fast Delivery</div>
+                            <div style={{fontStyle:"Candara", fontWeight:"bold"}}>Fast Delivery</div>
                         ) : (
-                            <div>4 days delivery</div>
+                            <div style={{fontStyle:"Candara", fontWeight:"bold"}}>4 days delivery</div>
                         )}
-                        <Rating rating={prod.ratings} />
+                        <Rating style={{color:"#FFFF00"}} rating={prod.ratings} />
                     </Card.Subtitle>
                     {cart.some((p) => p.id === prod.id) ? (
                         <Button
@@ -36,7 +37,7 @@ const SingleProduct = ({ prod }) => {
                             Remove from Cart
                         </Button>
                     ) : (
-                        <Button
+                        <Button style={{backgroundColor: "#4A1C49" , borderColor:"#4A1C49"}}
                             onClick={() =>
                                 dispatch({
                                     type: "ADD_TO_CART",

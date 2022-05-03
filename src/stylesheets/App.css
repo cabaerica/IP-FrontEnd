@@ -1,6 +1,6 @@
 a {
   text-decoration: none !important;
-  color: inherit !important;
+  color: white !important;
 }
 
 /* Scroll bar */
@@ -12,6 +12,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
+  background-color: #C585B3;
   outline: 1px solid slategrey;
 }
+
+.navbar-color{
+  background-color: #612e53 !important;
+}
+
+
