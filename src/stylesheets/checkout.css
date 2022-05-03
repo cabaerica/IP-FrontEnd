@@ -1,5 +1,7 @@
 .container {
-    min-height: 80.5vh;
-    height: auto !important;
-    height: 100%;
+    max-width: 960px;
+}
+
+#checkoutTitle{
+    font-size: xxx-large;
 }
