@@ -179,8 +179,7 @@ const Checkoutt = () => {
                                     </div>
                                 </div>
                                 <hr className="mb-4"/>
-                                <button className="btn btn-primary btn-lg btn-block" type="submit" style={{backgroundColor: "#4A1C49" , borderColor:"#4A1C49"}}>Continue to
-                                        checkout
+                                <button className="btn btn-primary btn-lg btn-block" type="submit" style={{backgroundColor: "#4A1C49" , borderColor:"#4A1C49"}}>Finish order
                                 </button>
                         </form>
                     </div>

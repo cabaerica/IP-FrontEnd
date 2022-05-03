@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4da5b183-3e04-495f-aa4a-076300998682" name="Changes" comment="Project Again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Checkoutt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/checkout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Checkoutt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Checkoutt.js" afterDir="false" />
     </list>
     <list id="c4fc2501-ba21-4e71-b96f-dbfc49f46748" name="Changes by Tudor" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +93,7 @@
       <workItem from="1651229934304" duration="400000" />
       <workItem from="1651513842066" duration="6676000" />
       <workItem from="1651523105429" duration="5321000" />
-      <workItem from="1651578740224" duration="7812000" />
+      <workItem from="1651578740224" duration="8910000" />
     </task>
     <task id="LOCAL-00001" summary="Update Product page">
       <created>1648560053404</created>
