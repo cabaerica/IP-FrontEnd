@@ -1,4 +1,4 @@
-
+import "./stylesheets/App.css";
 import {
     BrowserRouter,
     Route,
@@ -9,8 +9,11 @@ import Cart from "./components/Cart";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import User from "./components/User"
 import Footer from "./components/Footer";
+import Checkout from "./components/Checkoutt";
+import Sidebar from "./components/Sidebar";
+import User from "./components/User";
+import {useState} from "react";
 
 //const URL_CART = 'http://localhost:8002/cart';
 //const URL_PRODUCT = 'http://localhost:8001/products';
@@ -19,7 +22,17 @@ import Footer from "./components/Footer";
 
 
 function App() {
-    /*const [userData, setUserData] = useState([]);
+    const [userData, setUserData] = useState({
+        iduser: 0,
+        username: "abrakadabra",
+        password: "imiplacemagia",
+        firstname: "Abra",
+        lastname: "Kadabra",
+        email: "abrakadabra@mail.com",
+        birthday: "2022-05-03T14:04:26.223Z"
+    });
+    console.log(userData);
+    /*
     const [productData, setProductData] = useState([{}]);
     const [cartData, setCartData] = useState([]);
     const [wishlistData, setWishlistData] = useState([]);
@@ -123,18 +136,18 @@ function App() {
         </div>
     );*/
 
-
-
-
     return(
         <BrowserRouter>
+
             <Header/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/cart" element={<Cart/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/register" element={<Register/>}/>
+                <Route path="/checkout" element={<Checkout/>}/>
                 <Route path="/user" element={<User/>}/>
+                <Route path="/sidebar" element={<Sidebar/>}/>
             </Routes>
             <Footer/>
         </BrowserRouter>
