@@ -8,7 +8,6 @@
     color: #D6BBC0;
     position: relative;
     padding: 30px 0 30px;
-    border-top-right-radius: 125px;
 }
 
 .row {
@@ -56,3 +55,4 @@ li a:hover {
     position: relative;
     font-size: 1.2em;
 }
+
