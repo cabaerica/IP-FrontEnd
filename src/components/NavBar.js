@@ -23,9 +23,9 @@ const NavBar = () => {
           navbarScroll
         >
 
-          <Nav.Link href="products">Products</Nav.Link>
-          <Nav.Link href="cart">Cart</Nav.Link>
-          <Nav.Link href="user">Account</Nav.Link>
+          <Nav.Link href="/products">Products</Nav.Link>
+          <Nav.Link href="/cart">Cart</Nav.Link>
+          <Nav.Link href="/user">Account</Nav.Link>
         </Nav>
         <Form className="d-flex">
           <FormControl

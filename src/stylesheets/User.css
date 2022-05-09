@@ -4,6 +4,10 @@ body {
     justify-content: center;
 }
 
+
+.padding{
+    margin-top: 40px;
+}
 .user-card-full {
     overflow: hidden
 }
