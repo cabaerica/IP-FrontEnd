@@ -1,7 +1,7 @@
 import { Card, Button } from "react-bootstrap";
 import { CartState } from "../context/Context";
 import Rating from "./Rating";
-import "/FrontEnd_IP/IP-FrontEnd/src/stylesheets/singleproduct.css";
+import "../stylesheets/singleproduct.css";
 
 const SingleProduct = ({ prod }) => {
     const {
